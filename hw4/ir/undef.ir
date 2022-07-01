@@ -1,0 +1,18 @@
+define i32 @main() {
+B1:
+    br 1 B2 B3
+B2:
+    %x = 10
+    jmp B4
+B3:
+    jmp B4
+B4:
+    br 1 B5 B6
+B5:
+    %a = %x
+    jmp B7
+B6:
+    jmp B7
+B7:
+    ret 0
+}
